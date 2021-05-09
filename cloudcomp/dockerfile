@@ -1,0 +1,6 @@
+#base image
+FROM python
+COPY . /cloudcomp
+WORKDIR /cloudcomp
+RUN pip install nltk
+CMD python pyfile.py
